@@ -17,9 +17,15 @@ importers:
       react:
         specifier: ^18
         version: 18.3.1
+      react-animated-cursor:
+        specifier: ^2.11.2
+        version: 2.11.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
+      react-water-wave:
+        specifier: ^2.0.1
+        version: 2.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       tailwind-merge:
         specifier: ^2.4.0
         version: 2.4.0
@@ -926,6 +932,14 @@ packages:
     resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
     hasBin: true
 
+  jquery.ripples@0.6.3:
+    resolution: {integrity: sha512-ZZQtIoPdesJCx59eDpmbUThZs8HkAxNWG7eFogdziqwFx19oktRbC5XNIjY1PKbSx4YtmoQLHfbl4NHR1z9Wmw==}
+    peerDependencies:
+      jquery: '>=1.7.0'
+
+  jquery@3.7.1:
+    resolution: {integrity: sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==}
+
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -1217,6 +1231,12 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
+  react-animated-cursor@2.11.2:
+    resolution: {integrity: sha512-LV0PtST61tdeW/chCqFt1JLp6i0d5fD9v2uradBcPAkKKCi2Iw7sAcD11ADS1TjXPPj9MOoD9YubEt++/IbZ+g==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
   react-dom@18.3.1:
     resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
@@ -1224,6 +1244,12 @@ packages:
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  react-water-wave@2.0.1:
+    resolution: {integrity: sha512-+iu4pUzDebh2cIQbupzckCSAMok+dYx6hTOziVdLt2gIbB4erceMmlnzF2TmUg7FZDvFW7NJYWXEbfi7gzOsfA==}
+    peerDependencies:
+      react: ^16 | ^17 | ^18
+      react-dom: ^16 | ^17 | ^18
 
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
@@ -2606,6 +2632,12 @@ snapshots:
 
   jiti@1.21.6: {}
 
+  jquery.ripples@0.6.3(jquery@3.7.1):
+    dependencies:
+      jquery: 3.7.1
+
+  jquery@3.7.1: {}
+
   js-tokens@4.0.0: {}
 
   js-yaml@4.1.0:
@@ -2878,6 +2910,11 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
+  react-animated-cursor@2.11.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   react-dom@18.3.1(react@18.3.1):
     dependencies:
       loose-envify: 1.4.0
@@ -2885,6 +2922,13 @@ snapshots:
       scheduler: 0.23.2
 
   react-is@16.13.1: {}
+
+  react-water-wave@2.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      jquery: 3.7.1
+      jquery.ripples: 0.6.3(jquery@3.7.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react@18.3.1:
     dependencies:
