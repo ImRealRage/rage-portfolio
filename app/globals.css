@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  background: #000;
 }
 
 @layer utilities {
@@ -10,6 +11,6 @@ body {
     text-wrap: balance;
   }
   .before-content-none::before {
-    content: none;
+    content: "";
   }
 }
