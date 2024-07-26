@@ -14,3 +14,19 @@ body {
     content: "";
   }
 }
+
+/* fancy button  */
+
+.fancy-btn {
+  background-image: linear-gradient(
+    135deg,
+    #00d372,
+    #56acff 34%,
+    #7179ef 67%,
+    #d87cac
+  );
+  border-radius: 100em;
+  padding: 0.2vw;
+  max-width: 100%;
+  display: inline-block;
+}
