@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import MyImage from "@/public/assets/images/me/me-face.jpg";
+import MyImage from "@/public/assets/images/me/cat.jpg";
 
 function Profile() {
   return (

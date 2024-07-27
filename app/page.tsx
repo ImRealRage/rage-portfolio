@@ -11,6 +11,10 @@ import Fancybutton from "@/components/ui/fancy-button";
 import LiveClock from "@/components/ui/live-clock";
 import MagneticWrapper from "@/components/visualEffects/magnetic-wrapper";
 import ScrollDown from "@/components/ui/scroll-down";
+import LandingSection from "@/sections/landing";
+import FeaturedSection from "@/sections/featured";
+import AboutSection from "@/sections/about";
+import ContactSection from "@/sections/contact";
 
 export default function Home() {
   return (
@@ -21,33 +25,11 @@ export default function Home() {
       resolution="2048"
     >
       {() => (
-        <div className="h-screen p-10">
-          <div className="max-w-2xl mx-auto">
-            <Card title="Ui Components">
-              <div className="grid grid-cols-4">
-                <Button>Basic Button</Button>
-                <Button>
-                  <GoHomeFill />
-                  Basic Button
-                </Button>
-                <Button isIcon>
-                  <FaUser />
-                </Button>
-                <Button link="https://www.google.com">Google</Button>
-              </div>
-              <Input type="text" placeholder="Full Name" />
-              <Input type="text" placeholder="Full Name" icon={<FaUser />} />
-              <TextArea placeholder="Name" icon={<FaUser />} />
-              <Profile />
-              <MagneticWrapper className="w-[350px]">
-                <Fancybutton text="Contact Me" icon={<FaArrowRight />} />
-              </MagneticWrapper>
-              <LiveClock timezone="Asia/Kolkata" />
-              <MagneticWrapper className="">
-                <ScrollDown />
-              </MagneticWrapper>
-            </Card>
-          </div>
+        <div className="pb-8">
+          {/* <LandingSection />
+          <FeaturedSection />
+          <AboutSection /> */}
+          <ContactSection />
         </div>
       )}
     </WaterWaveWrapper>
