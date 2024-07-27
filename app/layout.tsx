@@ -5,6 +5,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import GrainEffect from "@/components/visualEffects/grain-effect";
 import Cursor from "@/components/cursor/cursor";
+import { Toaster } from "sonner";
 
 //Fonts
 const MainFont = Bricolage_Grotesque({ subsets: ["latin"] });
@@ -40,6 +41,7 @@ export default function RootLayout({
         <GrainEffect />
         <Cursor color="#fff" />
         {children}
+        <Toaster richColors />
       </body>
     </html>
   );

@@ -4,9 +4,10 @@ interface InputProps {
   icon?: ReactNode;
   placeholder: string;
   type: "email" | "text" | "password";
+  name: string;
 }
 
-const Input: FC<InputProps> = ({ icon, placeholder, type }) => {
+const Input: FC<InputProps> = ({ icon, placeholder, type, name }) => {
   return (
     <div className="relative w-full">
       {/* Icon */}
@@ -15,6 +16,7 @@ const Input: FC<InputProps> = ({ icon, placeholder, type }) => {
       </div>
       <input
         type={type}
+        name={name}
         placeholder={placeholder}
         className="bg-primary-background text-primary-foreground w-full rounded-lg text-sm ps-10 px-2.5 py-4 focus:outline-none"
       />
