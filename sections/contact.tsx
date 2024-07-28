@@ -5,13 +5,24 @@ import Card from "@/components/ui/card";
 import Input from "@/components/ui/input";
 import SelectInput from "@/components/ui/select-input";
 import TextArea from "@/components/ui/text-area";
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useRef, useState, useEffect } from "react";
 import { FaPhoneVolume, FaUser } from "react-icons/fa";
 import { FaRegMessage } from "react-icons/fa6";
 import { MdEmail, MdSubject } from "react-icons/md";
 import { SiMinutemailer } from "react-icons/si";
 import emailjs from "@emailjs/browser";
 import { toast } from "sonner"; // Import toast from sonner
+import { TbRobotOff } from "react-icons/tb";
+
+// Math CAPTCHA generation
+function generateMathCaptcha() {
+  const num1 = Math.floor(Math.random() * 10) + 1;
+  const num2 = Math.floor(Math.random() * 10) + 1;
+  return {
+    question: `${num1} + ${num2}`,
+    answer: num1 + num2,
+  };
+}
 
 export default function ContactSection() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -19,6 +30,12 @@ export default function ContactSection() {
 
   const [services, setServices] = useState<string[]>([]);
   const [ratings, setRatings] = useState<string[]>([]);
+  const [captcha, setCaptcha] = useState(generateMathCaptcha());
+  const [captchaInput, setCaptchaInput] = useState("");
+
+  useEffect(() => {
+    setCaptcha(generateMathCaptcha());
+  }, []);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
@@ -34,15 +51,23 @@ export default function ContactSection() {
       email: HTMLInputElement;
       subject: HTMLInputElement;
       message: HTMLTextAreaElement;
+      captchaInput: HTMLInputElement;
     };
 
     if (
       !formElements.name.value ||
       !formElements.email.value ||
       !formElements.subject.value ||
-      !formElements.message.value
+      !formElements.message.value ||
+      !formElements.captchaInput.value
     ) {
       toast.error("Please fill out all required fields.");
+      return;
+    }
+
+    if (parseInt(formElements.captchaInput.value) !== captcha.answer) {
+      toast.error("Incorrect CAPTCHA answer. Please try again.");
+      setCaptcha(generateMathCaptcha()); // Reset CAPTCHA
       return;
     }
 
@@ -158,6 +183,22 @@ export default function ContactSection() {
               placeholder="Your Message to me..."
               icon={<FaRegMessage />}
             />
+            {/* CAPTCHA */}
+            <div className="flex flex-col gap-4">
+              <label htmlFor="captcha" className="text-lg">
+                What is {captcha.question}?
+              </label>
+              <Input
+                icon={<TbRobotOff />}
+                name="captchaInput"
+                type="text"
+                placeholder="Please enter answer to prevent bots..."
+                //@ts-ignore
+                value={captchaInput}
+                //@ts-ignore
+                onChange={(e) => setCaptchaInput(e.target.value)}
+              />
+            </div>
             <div className="w-full flex justify-end">
               <div onClick={() => buttonRef.current?.click()}>
                 <Button className="!w-44 !py-3 !text-xl">
