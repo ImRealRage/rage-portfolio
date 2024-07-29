@@ -20,13 +20,13 @@ export default function EducationCard() {
 
 const EducationsData = [
   {
-    date: "2017 — 2020",
-    title: "Math & Computer science major",
-    subTitle: "FPL",
+    date: "2018 — 2020",
+    title: "MPVM Ganga Gurukulam",
+    subTitle: "CBSE, Maths",
   },
   {
-    date: "2012 — 2016",
-    title: "Maths baccalaureate",
-    subTitle: "Errachidi school",
+    date: "2021 — 2025",
+    title: "Chandigarh University",
+    subTitle: "UnderGrad, CSE",
   },
 ];

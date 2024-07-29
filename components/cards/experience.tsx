@@ -22,17 +22,17 @@ export default function ExperienceCard() {
 
 const experiencesData = [
   {
-    date: "2022 — Now",
-    title: "Teacher and instructor",
-    subTitle: "Udemy",
-    link: "https://www.udemy.com/user/mohamed-hajji-25",
+    date: "2023 - 2023",
+    title: " Software Engineer (Intern)",
+    subTitle: "Walmart",
+    link: "https://www.researchgate.net/publication/375551491_Retail_Supply_Chain_Systems_Analysis_A_Case_of_Walmart",
     tag: "Remote",
   },
   {
-    date: "2020 — 2021",
-    title: "React js full stack developer",
-    subTitle: "Toptal",
-    link: "https://www.toptal.com/",
-    tag: "Remote",
+    date: "2023 - Now",
+    title: "Reactjs developer",
+    subTitle: "Self",
+    link: " / ",
+    tag: "Mee",
   },
 ];
