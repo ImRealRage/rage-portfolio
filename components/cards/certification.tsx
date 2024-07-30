@@ -20,23 +20,23 @@ export default function CertificationsCard() {
 
 const CertificationssData = [
   {
-    date: "2021",
-    title: "Red Hat Certified Engineer (RHCE)",
-    subTitle: "RedHat",
+    date: "2024",
+    title: "Quantum Mechanics - I",
+    subTitle: "NPTEL",
   },
   {
-    date: "2020",
-    title: "Huwaei certified network dev",
-    subTitle: "Huwaei",
+    date: "2024",
+    title: "Mobile Development and JavaScript",
+    subTitle: "Meta",
   },
   {
-    date: "2020",
-    title: "Cisco Certified DevNet Associate",
-    subTitle: "Cisco",
+    date: "2023",
+    title: "Principles of UX/UI Design",
+    subTitle: "Meta",
   },
   {
-    date: "2019",
-    title: "Certified Web Developer (W3C)",
-    subTitle: "W3C",
+    date: "2023",
+    title: "Data Structures and Performance",
+    subTitle: "UC_SanDeigo",
   },
 ];
