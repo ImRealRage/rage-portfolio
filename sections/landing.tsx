@@ -28,18 +28,18 @@ export default function LandingSection() {
             <span>Code</span>
           </div>
           <div>
-            <span>Crafting</span>
+            <span>Abstract</span>
           </div>
           <div className="relative">
             <span>Brilliance</span>
             <div className="text-[1rem] leading-[1.4rem]  tracking-[-0.07rem] absolute top-[14vw] lg:top-[10vw] 2xl:top-[9rem] left-0 2xl:left-[57rem] w-[30rem] uppercase font-normal">
               <span>Empowering innovation</span>
               <br />
-              <span>through inspired design</span>
+              <span>by achieving abstraction</span>
               <br />
               <span>where challenges spark creativity</span>
               <br />
-              <span>and solutions redefine possibilities.</span>
+              <span>and goals are achieved.</span>
             </div>
           </div>
         </div>

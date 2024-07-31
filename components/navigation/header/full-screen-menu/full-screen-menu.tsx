@@ -47,15 +47,15 @@ export default function FullScreenMenu() {
           </div>
           {/*----Middle--------------*/}
           <div className="flex items-center gap-4">
+            <Link href="/">GITHUB</Link>
             <Link href="/">LINKEDIN</Link>
-            <Link href="/">UDEMY</Link>
-            <Link href="/">YOUTUBE</Link>
+            <Link href="/">X (TWITTER)</Link>
             <Link href="/">INSTAGRAM</Link>
-            <Link href="/">TWITTER</Link>
+            <Link href="/">STEAM</Link>
           </div>
           {/*----rIGHT--------------*/}
           <div className="flex items-center gap-4">
-            <Link href="/">©2024</Link>
+            <Link href="/">Made with (love) from Next.js</Link>
           </div>
         </div>
       </div>
