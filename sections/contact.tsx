@@ -112,6 +112,7 @@ export default function ContactSection() {
           <form
             onSubmit={sendEmail}
             ref={formRef}
+            id="contact"
             className="lg:col-span-2 bg-secondary-background border border-border rounded-lg space-y-6 relative overflow-hidden py-5 px-[25px] shadow-md"
           >
             <div className="flex flex-col lg:flex-row items-center justify-between mb-4 gap-8">

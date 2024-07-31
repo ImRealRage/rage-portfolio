@@ -5,51 +5,45 @@ export default function BackgroundCard() {
     <Card className="md:h-full" title="My Background">
       <div>
         <p className="leading-[160%] font-normal text-white/[0.4] text-[16px]">
-          Originating from a humble beginning in a &nbsp;
-          <span className="text-white underline">
-            remote mountain village in Morocco
-          </span>
-          , my early years were marked by enduring harsh living conditions.
-          However, fortune smiled upon me when, at the age of 7, my family
-          relocated to a small city, opening doors to new opportunities. <br />
+          Growing up in a &nbsp;
+          <span className="text-white underline">bustling city in India</span>
+          , my childhood was filled with curiosity and a love for learning.
+          Surrounded by the vibrant energy of urban life, I was exposed to a
+          diverse range of experiences and cultures. <br />
           <br />
           <span className="text-white underline">
-            It was amidst this transition
+            It was during my teenage years
           </span>
-          &nbsp; that my profound fascination with &nbsp;
-          <span className="text-white underline">technology</span>&nbsp; first
-          took root. From those formative years, I found myself deeply immersed
-          in &nbsp;
-          <span className="text-white underline">the world of gaming</span>
-          &nbsp; , where my passion for
+          &nbsp; that my interest in &nbsp;
+          <span className="text-white underline">computers</span>&nbsp; began to
+          take shape. I spent countless hours exploring &nbsp;
+          <span className="text-white underline">software and hardware</span>
+          &nbsp; , laying the foundation for my future endeavors in
           <span className="text-white underline">
-            &nbsp;coding and technology&nbsp;
+            &nbsp;technology and programming&nbsp;
           </span>
-          began to flourish. <br />
+          . <br />
           <br />
-          As I delved deeper into the realm of technology, I ventured into
-          diverse fields, ranging from
-          <span className="text-white">
-            &nbsp;artificial intelligence&nbsp;
-          </span>
-          to <span className="text-white">&nbsp;penetration testing&nbsp;</span>
-          . This exploration naturally led me to delve into
-          <span className="text-white">&nbsp;cybersecurity&nbsp;</span>, where I
-          sought to deepen my understanding and expertise then i delved into
-          <span className="text-white">
-            &nbsp;full-stack web development&nbsp;
-          </span>
-          , mastering the art of crafting immersive online experiences. <br />
-          <br /> Alongside my development journey, I&apos;ve embraced the role
-          of an&nbsp;
-          <span className="text-white underline">instructor</span>&nbsp;,
-          sharing my knowledge and expertise through curated courses. <br />
+          As I pursued my passion, I immersed myself in various technological
+          domains, from
+          <span className="text-white">&nbsp;machine learning&nbsp;</span>
+          to <span className="text-white">&nbsp;data science&nbsp;</span>. This
+          journey naturally led me to
+          <span className="text-white">&nbsp;software engineering&nbsp;</span>,
+          where I honed my skills and expanded my knowledge, then I delved into
+          <span className="text-white">&nbsp;full-stack development&nbsp;</span>
+          , mastering the art of building comprehensive web applications. <br />
+          <br /> Alongside my technical pursuits, I&apos;ve taken on the role of
+          a&nbsp;
+          <span className="text-white underline">mentor</span>&nbsp;, guiding
+          aspiring developers and sharing my insights through workshops and
+          tutorials. <br />
           <br />
           <span className="text-white italic">
-            Inspired by the transformative power of technology, I strive to
-            create solutions that resonate with users on a profound level,
-            elevating everyday experiences into memorable and inspiring
-            solutions.
+            Driven by a belief in the transformative power of technology, I
+            strive to develop solutions that not only address practical needs
+            but also inspire and empower users, turning everyday interactions
+            into meaningful and memorable experiences.
           </span>
         </p>
       </div>

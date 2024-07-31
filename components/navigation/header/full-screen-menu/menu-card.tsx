@@ -44,30 +44,30 @@ const myLinks = [
   },
   {
     title: "Background",
-    link: "#about",
+    link: "#background",
   },
   {
     title: "Courses",
-    link: "#about",
+    link: "#courses",
   },
   {
     title: "EXPERIENCE",
-    link: "#about",
+    link: "#experience",
   },
   {
     title: "EDUCATION",
-    link: "#about",
+    link: "#education",
   },
   {
     title: "CERTIFICATIONS",
-    link: "#about",
+    link: "#certifications",
   },
   {
     title: "TECH STACK",
-    link: "#about",
+    link: "#tech",
   },
   {
     title: "Gallery",
-    link: "#about",
+    link: "#gallery",
   },
 ];

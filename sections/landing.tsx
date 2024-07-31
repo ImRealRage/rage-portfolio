@@ -8,7 +8,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function LandingSection() {
   return (
-    <div className="relative h-screen overflow-hidden p-8">
+    <div className="relative h-screen overflow-hidden p-8" id="hero">
       {/* Header */}
       <Header />
       {/* Show magnetic fancy button on small screen n hide on medium */}

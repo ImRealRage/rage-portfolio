@@ -27,11 +27,11 @@ export default function ResumeCard() {
       <div className="flex items-center justify-between md:absolute md:bottom-6 md:left-6 md:w-[calc(100%-48px)]">
         {/* Socials */}
         <Socials />
-        <a href="../../public/assets/resume/My_Resume.pdf">
-        <Button>
-          <FaDownload />
-          Download Resume
-        </Button>
+        <a href="https://raw.githubusercontent.com/ImRealRage/my-portfolio/main/My_Resume.pdf">
+          <Button>
+            <FaDownload />
+            Download Resume
+          </Button>
         </a>
       </div>
     </Card>

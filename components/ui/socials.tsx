@@ -1,7 +1,6 @@
 import Button from "./button";
-import { SiUdemy } from "react-icons/si";
-import { RiYoutubeFill } from "react-icons/ri";
-import { FaLinkedinIn, FaInstagram } from "react-icons/fa6";
+import { FaLinkedinIn, FaInstagram, FaStackOverflow } from "react-icons/fa6";
+import { GrGithub } from "react-icons/gr";
 
 export default function Socials() {
   return (
@@ -17,23 +16,23 @@ export default function Socials() {
 
 const socials = [
   {
-    icon: <SiUdemy className="w-4 h-4" />,
-    link: "https://www.udemy.com/user/mohamed-hajji-25",
-    username: "Mohmed Hajji",
+    icon: <GrGithub className="w-4 h-4" />,
+    link: "https://github.com/ImRealRage",
+    username: "ImRealRage",
   },
   {
-    icon: <RiYoutubeFill className="w-5 h-5" />,
-    link: "https://www.youtube.com/channel/UC-w5hcIcVX5IzP8537CYSBg",
-    username: "Dev7",
+    icon: <FaStackOverflow className="w-5 h-5" />,
+    link: "https://stackoverflow.com/users/25891073/rage",
+    username: "Rage",
   },
   {
     icon: <FaLinkedinIn className="w-5 h-5" />,
-    link: "https://www.linkedin.com/in/medhajji/",
-    username: "Mohamed HAJJI",
+    link: "https://www.linkedin.com/in/kanishk-shukla/",
+    username: "Kanishk Shukla",
   },
   {
     icon: <FaInstagram className="w-5 h-5" />,
-    link: "https://www.instagram.com/med_hajji7/",
-    username: "Mohamed HAJJI",
+    link: "https://www.instagram.com/imrealrage/",
+    username: "imrealrage",
   },
 ];
