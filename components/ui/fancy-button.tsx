@@ -3,7 +3,7 @@ import { FC, ReactNode } from "react";
 interface ButtonProps {
   text: string;
   icon: ReactNode;
-  onClick?: () => void; // Add the onClick prop
+  onClick?: () => void;
 }
 
 const Fancybutton: FC<ButtonProps> = ({ text, icon, onClick }) => {
