@@ -100,12 +100,16 @@ export default function ContactSection() {
               icon={<FaPhoneVolume className="fill-[#333] text-lg" />}
               text="+91-8127682070"
               btnText="Call me"
+              onClick={() => window.open("tel:+91-8127682070", "_self")}
             />
             <ContactCard
               title="Chat with me"
               icon={<MdEmail className="fill-[#333] text-lg" />}
               text="work.shubhshukla@gmail.com"
               btnText="Email me"
+              onClick={() =>
+                window.open("mailto:work.shubhshukla@gmail.com", "_self")
+              }
             />
           </div>
           {/* Contact Form */}

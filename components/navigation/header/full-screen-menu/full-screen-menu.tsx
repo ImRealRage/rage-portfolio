@@ -42,20 +42,24 @@ export default function FullScreenMenu() {
           {/*----Left--------------*/}
           <div className="flex items-center gap-4">
             <Link href="/">LEGAL NOTICE</Link>
-            <Link href="/">404</Link>
+            <Link href="/404">404</Link>
             <Link href="/">LEGALSTYLE</Link>
           </div>
           {/*----Middle--------------*/}
           <div className="flex items-center gap-4">
-            <Link href="/">GITHUB</Link>
-            <Link href="/">LINKEDIN</Link>
-            <Link href="/">X (TWITTER)</Link>
-            <Link href="/">INSTAGRAM</Link>
-            <Link href="/">STEAM</Link>
+            <Link href="https://github.com/ImRealRage">GITHUB</Link>
+            <Link href="https://www.linkedin.com/in/kanishk-shukla/">
+              LINKEDIN
+            </Link>
+            <Link href="https://x.com/imrealrage">X (TWITTER)</Link>
+            <Link href="https://www.instagram.com/imrealrage/">INSTAGRAM</Link>
+            <Link href="https://stackoverflow.com/users/25891073/rage">
+              STACKOVERFLOW
+            </Link>
           </div>
           {/*----rIGHT--------------*/}
           <div className="flex items-center gap-4">
-            <Link href="/">Made with (love) from Next.js</Link>
+            <Link href="/">Made with 💜 from Next.js</Link>
           </div>
         </div>
       </div>

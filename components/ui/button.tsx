@@ -1,12 +1,13 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { FC, ReactNode } from "react";
+import { FC, MouseEventHandler, ReactNode } from "react";
 
 interface ButtonProps {
   children: ReactNode;
   link?: string;
   isIcon?: boolean;
   className?: string;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
 const Button: FC<ButtonProps> = ({ children, className, isIcon, link }) => {
