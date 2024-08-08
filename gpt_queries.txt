@@ -1,0 +1,1 @@
+what i want to do is from my nav menu, i want to reach to all my sections, i want you to assign each section appropriate ids so that when i click on them from nav menu i get landed there, also thenav menu should close when it lands to that page
